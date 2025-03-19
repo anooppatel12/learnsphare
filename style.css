@@ -1,0 +1,83 @@
+/* ✅ General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* ✅ Class Button Styling */
+.class-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.class-btn {
+    background: #3b5998;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.class-btn:hover {
+    background: #4c70ba;
+}
+
+/* ✅ Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 999;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    margin: 100px auto;
+}
+
+/* ✅ Progress Bar */
+.progress-bar-wrapper {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 0;
+    height: 10px;
+    background-color: #3b5998;
+    border-radius: 5px;
+}
+
+/* ✅ Video Card Styling */
+.video-card {
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 12px;
+    width: 320px;
+}
+
+/* ✅ Delete Button */
+.delete-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LearnSphere</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ✅ Firebase CDN (Latest Version) -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+
+</head>
+<body>
+
+  <!-- ✅ Class List -->
+  <div class="container">
+    <div class="class-list">
+      <button class="class-btn" onclick="openUploadModal('11th Demo Class')">11th Demo Class</button>
+      <button class="class-btn" onclick="openUploadModal('12th Demo Class')">12th Demo Class</button>
+      <button class="class-btn" onclick="openUploadModal('11th Physics Class')">11th Physics Class</button>
+      <button class="class-btn" onclick="openUploadModal('11th Chemistry Class')">11th Chemistry Class</button>
+      <button class="class-btn" onclick="openUploadModal('11th Biology Class')">11th Biology Class</button>
+      <button class="class-btn" onclick="openUploadModal('11th English Class')">11th English Class</button>
+      <button class="class-btn" onclick="openUploadModal('11th Math Class')">11th Math Class</button>
+      <button class="class-btn" onclick="openUploadModal('12th Physics Class')">12th Physics Class</button>
+      <button class="class-btn" onclick="openUploadModal('12th Chemistry Class')">12th Chemistry Class</button>
+      <button class="class-btn" onclick="openUploadModal('12th Biology Class')">12th Biology Class</button>
+      <button class="class-btn" onclick="openUploadModal('12th English Class')">12th English Class</button>
+    </div>
+  </div>
+
+  <!-- ✅ Upload Modal -->
+<div id="uploadModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeUploadModal()">&times;</span>
+    <h2 id="classTitle">Upload Video</h2>
+
+    <!-- ✅ Form -->
+    <div class="form-group">
+      <label for="videoTitle">Title</label>
+      <input type="text" id="videoTitle" placeholder="Enter video title" required />
+    </div>
+    <div class="form-group">
+      <label for="videoDescription">Description</label>
+      <textarea id="videoDescription" placeholder="Enter video description" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="videoFile">Select Video</label>
+      <input type="file" id="videoFile" accept="video/*" required />
+    </div>
+    <button id="uploadBtn" class="upload-btn">Upload</button>
+  </div>
+</div>
+
+
+  <!-- ✅ Video List -->
+  <div id="videoContainer" class="video-list"></div>
+
+  <!-- ✅ App.js -->
+  <script type="module" src="app.js" defer></script>
+
+</body>
+</html>
